@@ -1,0 +1,30 @@
+  
+  .menu {
+    display: flex;                 /* Align list items in a row */
+    padding: 0;                    /* Remove default padding */
+    margin-bottom: 43%;
+    list-style-type: none;          /* Remove bullet points */
+    position: absolute;
+    font-size: 13px;
+  }
+  
+  .menu li {
+    margin: 0 30px;                 /* Add spacing between menu items */
+    padding: 0;                /* Remove any padding */
+  }
+  
+  .menu li:hover {
+    cursor: pointer;                /* Optional: Change cursor on hover */
+  }
+  
+  .signature {
+    margin-bottom: 43%;
+    margin-right: 70%;           /* Corrected to use px */
+  }
+  
+  .language {
+    font-size: 10px;
+    margin-bottom: 42%;
+    margin-right: 50px;                /* Set correct font size for the language */
+  } 
+  
