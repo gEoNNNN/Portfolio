@@ -1,30 +1,61 @@
-  
-  .menu {
-    display: flex;                 /* Align list items in a row */
-    padding: 0;                    /* Remove default padding */
-    margin-bottom: 43%;
-    list-style-type: none;          /* Remove bullet points */
-    position: absolute;
-    font-size: 13px;
+.position {
+  position: fixed; /* Fix the menu to stay in the same position */
+  top: 0; /* Align the menu to the top */
+  left: 50%; /* Position it horizontally in the middle */
+  transform: translateX(-50%); /* Center the menu */
+  width: 85%; /* Ensure it spans across the screen width */
+  display: flex;
+  justify-content: space-between; /* Space out the signature, menu, and language */
+  align-items: center; /* Align vertically */
+  padding: 0 100px; /* Add 100px space on the left and right */
+  z-index: 1000; /* Ensure it's on top of other elements */
+}
+
+.menu {
+  display: flex; /* Align list items in a row */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove margins */
+  list-style-type: none; /* Remove bullet points */
+  font-size: 13px;
+  animation: fadeIn 1s forwards;
+}
+
+.menu li {
+  font-size: 3vh;
+  color: #4A4141;
+  margin: 0 30px; /* Add spacing between menu items */
+}
+
+.menu li:hover {
+  cursor: pointer; /* Optional: Change cursor on hover */
+}
+
+.signature {
+  color: #4A4141;
+  font-size: 4vh; /* Keep the font size appropriate */
+  margin-right: auto; /* Push the menu items to the right */
+  opacity: 0; /* Start invisible */
+  animation: fadeIn 1s forwards; /* Apply the animation */
+  animation-delay: 0.5s; /* Delay for signature */
+}
+
+.language {
+  color: #4A4141;
+  font-size: 3vh; /* Adjust font size */
+  margin-left: auto; /* Push the menu items to the left */
+  opacity: 0; /* Start invisible */
+  animation: fadeIn 1s forwards; /* Apply the animation */
+  animation-delay: 1s; /* Delay for language */
+}
+
+/* Keyframes for falling effect */
+@keyframes fadeIn {
+  0% {
+    transform: translateY(-20px); /* Start above its position */
+    opacity: 0; /* Start invisible */
   }
-  
-  .menu li {
-    margin: 0 30px;                 /* Add spacing between menu items */
-    padding: 0;                /* Remove any padding */
+  100% {
+    transform: translateY(0); /* End at original position */
+    opacity: 1; /* End visible */
   }
-  
-  .menu li:hover {
-    cursor: pointer;                /* Optional: Change cursor on hover */
-  }
-  
-  .signature {
-    margin-bottom: 43%;
-    margin-right: 70%;           /* Corrected to use px */
-  }
-  
-  .language {
-    font-size: 10px;
-    margin-bottom: 42%;
-    margin-right: 50px;                /* Set correct font size for the language */
-  } 
-  
+}
