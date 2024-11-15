@@ -21,6 +21,8 @@
 }
 
 .menu li {
+  font-size: 15px;
+  font-weight: 700;
   font-size: 3vh;
   color: #4A4141;
   margin: 0 30px; /* Add spacing between menu items */
@@ -37,6 +39,8 @@
   opacity: 0; /* Start invisible */
   animation: fadeIn 1s forwards; /* Apply the animation */
   animation-delay: 0.5s; /* Delay for signature */
+  font-weight: 500;
+  font-family: 'Playfair Display', serif;
 }
 
 .language {
@@ -46,6 +50,8 @@
   opacity: 0; /* Start invisible */
   animation: fadeIn 1s forwards; /* Apply the animation */
   animation-delay: 1s; /* Delay for language */
+  font-weight: 500;
+  font-family: 'Playfair Display', serif;
 }
 
 /* Keyframes for falling effect */

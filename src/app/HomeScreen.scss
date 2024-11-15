@@ -47,45 +47,16 @@
   text-wrap: nowrap;
 }
 
-.text_description_one {
+.text_description {
   font-size: 3.5vh;
   font-weight: 300;
   margin-top: 28vh;
   margin-left: 30vh;
   text-align: left;
-  width: 55%;
+  width: 70%;
   text-wrap: wrap;
 }
-
-.text_description_two {
-  position: absolute;
-  white-space: nowrap;
-  font-size: 13px;
-  font-weight: 300;
-  margin-top: -5%;
-  margin-left: -150%;
-}
-
-.download-button {
-  position: absolute; /* This will now position relative to .body */
-  display: inline-block; /* Make the button inline */
-  margin-top: 20px; /* Space above the button */
-  margin-left: -200%;
-  padding: 5px 15px; /* Button padding */
-  font-size: 16px; /* Font size */
-  color: #fff; /* Text color */
-  background-color: #2C6FFF; /* Button background color */
-  border: none; /* Remove default border */
-  border-radius: 20px; /* Rounded corners */
-  text-decoration: none; /* Remove underline for links */
-  text-align: center; /* Center text */
-  cursor: pointer; /* Pointer cursor on hover */
-  transition: background-color 0.3s; /* Smooth transition */
-  position: absolute; /* Positioning button */
-  white-space: nowrap; /* Prevent text wrapping */
-  min-width: 120px; /* Set minimum width */
-}
-
-.download-button:hover {
-  background-color: #4A4141; /* Change color on hover */
+.download {
+  margin-top: 0vh;
+  margin-right: 10vh;
 }

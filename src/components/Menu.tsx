@@ -3,7 +3,7 @@ import './Menu.scss';
 function Menu() {
   return (
     <div className='position'>
-      <p className='signature'>Eugen Ost.</p>
+      <p className='signature'>Eugen Ostafi</p>
       <ul className='menu'>
         <li>Home</li>
         <li>Projects</li>

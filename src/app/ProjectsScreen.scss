@@ -1,0 +1,40 @@
+.body {
+  background-image: url(./../assets/mainbg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center children horizontally */ /* Center children vertically */
+  font-size: 15px;
+  font-weight: 700;
+  position: relative;
+}
+.content {
+  margin-top: 10vh;
+}
+.work {
+  color: #4A4141;
+  font-size: 5vh;
+  font-weight: 500;
+  font-family: "Inter";
+  text-align: center; /* Center text within its container */
+}
+.text{
+  color: #4A4141;
+  font-size: 2vh;
+  font-weight: 500;
+  font-family: "Inter";
+}
+.card {
+  display: flex; /* Use Flexbox for the card layout */
+  flex-direction: row; /* Arrange cards in a row */
+  justify-content: center; /* Center the cards horizontally */
+  margin-top: 20px; /* Add margin for spacing above the cards */
+}
+.card > div {
+  margin: 0 50px; /* Add spacing between cards (15px on left and right) */
+}
